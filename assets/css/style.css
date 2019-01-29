@@ -200,6 +200,10 @@ header span.ribbon-inner {
   z-index: 1
 }
 
+header span.ribbon-inner h2 {
+  padding: 1.33em 0 1.33em 0;
+}
+
 header span.left-tail,
 header span.right-tail {
   position: relative;
@@ -362,6 +366,10 @@ footer span.octocat {
   width: 30px;
   height: 30px;
   margin: 0 auto
+}
+
+section p img {
+  margin: 1.33em 0 1.33em 0;
 }
 
 body {

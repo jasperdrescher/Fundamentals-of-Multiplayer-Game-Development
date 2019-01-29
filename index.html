@@ -141,6 +141,11 @@
         <h4 id="part1-chapter5">Chapter 5: Packets</h4>
         <p>The client and server communicate with each other by sending small data packets at a high frequency, which is usually 20 to 30 packets per second. In contrast with a single player game, a multiplayer game has to deal with a variety of new problems caused by packet-based communication.
         </p>
+        <p><img src="assets/images/packet.png"></p>
+        <p>Packets are sent using TCP or UDP. A packet is send to its destination, where it might or might not arrive. A packet consists of 3 headers of each 32 bits in length:</p>
+        <p>&middot; The IP header: this tells the router which IP address to send the packet to.</p>
+        <p>&middot; The UDP header: this contains port on which the packet is send.</p>
+        <p>&middot; The content: this is the actual content of the packet in ASCII, so each character is 1 byte.</p>
 
         <h4 id="part1-chapter6">Chapter 6: Tickrates</h4>
         <p>Another important topic of networking is the server tickrate. Just like a higher refresh rate on your monitor or a higher in-game framerate, a higher tickrate on the server will be a smoother experience. However, changing the tickrate throughout the development of a game can result in unexpected behavior, especially when different objects interact.
@@ -201,6 +206,10 @@
         <h5 id="part1-chapter13-4">Chapter 13.4: Entity prioritization</h5>
         <p>When it comes to games with large worlds or a high number of consistent players, it becomes even more challenging to maintain a stable gameplay experience. Games with lots of entities to replicate to all connected clients, with often large worlds, have lower tickrates and only replicate entities close to a player using delta snapshots.
           Some games take it further by having varying tickrates for different entities or systems, such as AI with lower tickrates.
+        </p>
+
+        <h5 id="part1-chapter13-4">Chapter 13.4: Packet reliability</h5>
+        <p>Reliable or unreliable packets. Difference is if it has to arrive in the right sequence.
         </p>
 
         <h3 id="part2">Part II: Multiplayer in Unreal Engine 4</h3>
