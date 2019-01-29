@@ -549,8 +549,9 @@ dd p:first-child {
 }
 
 .header-level-3 {
+  color: #7c334f;
   margin: 20px 0 10px;
-  font-size: 1.45em
+  font-size: 1.2em;
 }
 
 .header-level-4 {
